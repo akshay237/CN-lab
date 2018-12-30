@@ -1,5 +1,5 @@
 set ns [new Simulator]
-set nf [open pg1.nam w]
+set nf [open b1.nam w]
 $ns namtrace-all $nf
 set nd [open pg1.tr w]
 $ns trace-all $nd
