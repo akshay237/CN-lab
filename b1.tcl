@@ -1,7 +1,7 @@
 set ns [new Simulator]
 set nf [open b1.nam w]
 $ns namtrace-all $nf
-set nd [open pg1.tr w]
+set nd [open b1.tr w]
 $ns trace-all $nd
 
 proc finish { } {
@@ -9,7 +9,7 @@ global ns nf nd
 $ns flush-trace
 close $nf
 close $nd
-exec nam pg1.nam &
+exec nam b1.nam &
 exit 0
 }
 
