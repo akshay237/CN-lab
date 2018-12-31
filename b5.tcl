@@ -9,7 +9,7 @@ proc finish { } {
     $ns flush-trace
     close $nf
     close $nd
-    exec nam b4.nam &
+    exec nam b5.nam &
     exit 0
 }
 for {set i 0} {$i < 7} {incr i} {
