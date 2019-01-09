@@ -7,6 +7,8 @@ void dijkstra(int n,int source,int cost[10][10],int dist[])
 		visited[i]=0;
 		dist[i]=cost[source][i];
 	}
+	visited[source]=1;
+	dist[source]=0;
 	count=2;
 	while(count<n)
 	{
